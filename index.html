@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Welcome to RockLand!!</title>
+   
+    <link rel="stylesheet" media="(max-width:480px)" href="css/indexMobile.css">
+    <link rel="stylesheet"  media="(min-width:481px)" href="css/indexLarge.css">
+    <style>
+
+    /*================================js媒體查詢================================*/
+    .state-indicator {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+    z-index: 1;
+    /*螢幕大於1200px*/
+}
+
+/* 小屏幕 */
+@media screen and (max-width: 1200px) {
+    .state-indicator {
+        z-index: 2;
+    }
+}
+
+/* 平板 */
+@media screen and (max-width: 1024px) {
+    .state-indicator {
+        z-index: 3;
+    }
+}
+
+/* 手机 */
+@media screen and (max-width: 480px) {
+    .state-indicator {
+        z-index: 4;
+    }
+}
+/*=========================================end===============================*/
+    body {
+        overflow-x: hidden;
+        background-color: #ece9e0;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: "華康新特明體", "新細明體";
+    }
+    
+    a {
+        color: #fff;
+    }
+    
+    
+    </style>
+    
+</head>
+
+<body>
+    <div class="header_out"></div>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/Logo1.png" height="108" width="254" alt=""></a>
+            </div>
+            <div class="loginBar">
+                <p><a href="javascript: void(0)">註冊</a> <a href="javascript: void(0)">登入</a></p>
+            </div>
+            <div class="nav">
+                <ul>
+                    <a href="acoustic.html">
+                        <li>民謠吉他</li>
+                    </a>
+                    <a href="electric.html">
+                        <li>電子吉他</li>
+                    </a>
+                    <a href="course.html">
+                        <li>教學課程</li>
+                    </a>
+                    <a href="support.html">
+                        <li>售後服務</li>
+                    </a>
+                </ul>
+            </div><span style="clear:both"></span>
+            <div class="hamburger">
+                <div class="button">
+                    <a href="#" class="open"><img src="img/menu.png" alt="" width="30" height="30"></i></a>
+                    <a href="#" class="close hide"><img src="img/close.png" height="30" width="30" alt=""></a>
+                </div>
+                <div class="mobile_menu hide">
+                    <ul>
+                        <a href="acoustic.html">
+                            <li>民謠吉他</li>
+                        </a>
+                        <a href="electric.html">
+                            <li>電子吉他</li>
+                        </a>
+                        <a href="course.html">
+                            <li>教學課程</li>
+                        </a>
+                        <a href="support.html">
+                            <li>售後服務</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ac_bg">
+            <div class="ac_text">
+                <p>現在就開始你的吉他旅程
+                    <br>選把吉他吧&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="acoustic.html">更多>>></a></span></p>
+            </div>
+        </div>
+        <div class="ac_prt_bg">
+            <div class="ac_prt">
+                <ul>
+                    <li><img src="img/acoustic6.png" alt=""></li>
+                    <li>
+                        <div class="ac_prt_text">
+                            <h2>Taylor 510 民謠吉他</h2>
+                            <p>小指板容易按和絃
+                                <br>配合銀弦不易手痛
+                                <br>每位初學者的必備吉他<br>
+                                <br><a href="acoustic.html">更多內容>></a> </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li><img src="img/acoustic7.png" alt=""></li>
+                    <li>
+                        <div class="ac_prt_text">
+                            <h2>Taylor 650 民謠吉他</h2>
+                            <p>聲音清晰乾淨，較大的共鳴箱
+                                <br>不插電表演的必備吉他<br>
+                                <br> <a href="acoustic.html">更多內容>></a></p>
+                        </div>
+                    </li>
+                </ul><span style="clear:both;"></span>
+            </div>
+        </div>
+        <div class="ec_bg">
+            <div class="ec_text">
+                <p>或是你想選把電吉他
+                    <br>搖滾一下&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="electric.html">更多>></a></span></p>
+            </div>
+        </div>
+        <div class="ec_prt">
+            <ul>
+                <li><img src="img/electric1.png" alt=""></li>
+                <li>
+                    <div class="ac_prt_text">
+                        <h2>Taylor TZ Serious</h2>
+                        <p>楓木製作，三段拾音器，聲音乾淨俐落<br>
+                            <br><a href="electric.html">更多>></a></p>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li><img src="img/electric2.png" alt=""></li>
+                <li>
+                    <div class="ac_prt_text">
+                        <h2>Taylor TZ Serious</h2>
+                        <p>楓木製作，三段拾音器，聲音乾淨俐落<br>
+                            <br><a href="electric.html">更多>></a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="course">
+            <div class="course_text">
+                <p>從基礎到進階的各種課程
+                    <br>帶你循序漸進
+                    <br><a href="course.html">馬上報名>></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_inside">
+            <div class="detail">
+                 <h2>店家資訊</h2>
+                    <p><br>
+                    <br>地址：
+                    <br>台北市文山區木柵路五段
+                    <br>603號
+                    <br>
+                    <br>電話：03-467589
+                    <br>
+                    <br>營業時間：
+                    <br>星期二到日（一公休）</p>
+            </div>
+            <div class="map">
+                <ul>
+                    <a href="acoustic.html">
+                        <li>民謠吉他</li>
+                    </a>
+                    <a href="electric.html">
+                        <li>電子吉他</li>
+                    </a>
+                    <a href="course.html">
+                        <li>教學課程</li>
+                    </a>
+                    <a href="support.html">
+                        <li>售後服務</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="other">
+                <ul>
+                    <a href="javascript: void(0)">
+                        <li>樂器百科</li>
+                    </a>
+                    <a href="javascript: void(0)">
+                        <li>購物說明</li>
+                    </a>
+                    <a href="javascript: void(0)">
+                        <li>隱私政策</li>
+                    </a>
+                    <a href="javascript: void(0)">
+                        <li>聯絡我們</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="brand">
+                <ul>
+                    <a href="javascript: void(0)">
+                        <li>Fender</li>
+                    </a>
+                    <a href="javascript: void(0)">
+                        <li>Gibson</li>
+                    </a>
+                    <a href="javascript: void(0)">
+                        <li>Ibanez</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer_logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+
+<!-- 這是手機選單 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	$(document).ready( function(){
+	//丁館賣叮噹
+
+		$('.open').click(function(){
+			$('.open').addClass('hide');
+			$('.close').removeClass('hide');
+			$('.mobile_menu').removeClass('hide');
+		})
+
+		$('.close').click(function(){
+			$('.open').removeClass('hide');
+			$('.close').addClass('hide');
+			$('.mobile_menu').addClass('hide');
+		})
+
+
+	//A咖賣叮噹
+	})
+
+</script>
+
+<script>   //裝置查詢&隨機換圖
+	 var indicator = document.createElement('div');    //用CSS查詢媒體之後設置於Z-index
+    	 indicator.className = 'state-indicator';
+    	 document.body.appendChild(indicator);
+
+	var array = new Array("url(img/5.png)","url(img/banner1_small.jpg)","url(img/banner2_small.jpg)","url(img/banner3_small.jpg)","url(img/banner4_small.jpg)","url(img/banner5_small.jpg)","url(img/banner6_small.jpg)","url(img/banner7_small.jpg)","url(img/banner8_small.jpg)");
+	var counter = 0;
+	function showImg(){
+			var a;
+			a=document.getElementsByClassName("ac_bg");
+			if(counter !== 9){
+				a[0].style.background = array[counter];
+				counter++;
+			}
+			else{
+				counter=1;
+				a[0].style.background = array[0];
+			}
+	}
+	function init(){
+		showImg();
+		setInterval(showImg,3000);
+	}
+   
+
+    // 獲取設備類别的方法，抓Z-index
+    function getDeviceState() {
+        return parseInt(window.getComputedStyle(indicator).getPropertyValue('z-index'), 10);
+    }
+    if( getDeviceState()!==4){
+    	window.onload = init;
+    }
+
+</script>
+</body>
+
+</html>

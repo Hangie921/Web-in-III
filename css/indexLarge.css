@@ -1,0 +1,373 @@
+        .state-indicator {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+    z-index: 1;
+    /*螢幕大於1200px*/
+}
+
+/* 小屏幕 */
+@media screen and (max-width: 1200px) {
+    .state-indicator {
+        z-index: 2;
+    }
+}
+
+/* 平板 */
+@media screen and (max-width: 1024px) {
+    .state-indicator {
+        z-index: 3;
+    }
+}
+
+/* 手机 */
+@media screen and (max-width: 480px) {
+    .state-indicator {
+        z-index: 4;
+    }
+}
+/*=========================================end===============================*/
+    body {
+        overflow-x: hidden;
+        background-color: #ece9e0;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: "華康新特明體", "新細明體";
+    }
+    
+    a {
+        color: #fff;
+    }
+    
+        
+        .hamburger {
+            display: none;
+        }
+        .wrapper {
+            width: 90%;
+            max-width: 980px;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            /*background-color: #aaa;*/
+            position: relative;
+        }
+        .header_out {
+            width: 100%;
+            height: 108px;
+            position: absolute;
+        }
+        .header {
+            /*position: relative;*/
+            margin: auto;
+            width: 100%;
+            max-width: 980px;
+            height: 108px;
+        }
+        .loginBar {
+            background:linear-gradient(270deg,#000 30%,#ece9e0 90%);
+            text-align: right;
+            width: 74.081632653%;
+            /*726px;*/
+            height: 20px;
+            float: left;
+            background-color:#000;
+        }
+        .logo {
+            width: 25.9183673469%;
+            /*254px;*/
+            height: 0;
+            /*104px;*/
+            padding-bottom: 11.03%;
+            float: left;
+        }
+        .loginBar a:hover{
+            color:#fff;
+        }
+        .loginBar p {
+            color: #fff;
+        }
+       
+        .header a img {
+            width: 100%;
+            height: auto;
+        }
+        .nav {
+            width: 57.9795918367%;
+            /*538.118px;*/
+            margin-top: -29px;
+            margin-left: 421px;
+            float: right;
+            padding-right: 3.062%;  /*30px*/
+            /*background-color:#0ff;*/
+        }
+        .nar_ul {
+            /*padding-right: 30px;*/
+        }
+        .nav ul li {
+            /*display:inline-block;*/
+            float: left;
+            background-color: hsla(0, 0%, 0%, 0);
+        }
+        .nav ul a {
+            text-indent: -9999px;
+        }
+        .nav ul a:nth-child(n+1) li {
+            /*打文字在裡面，縮排或是改顏色*/
+            display: block;
+            width: 22.299%;/*120px*/
+            height: 0;/*29px*/
+            padding-bottom: 5.390457249%;
+            background-image: url(../img/acoustic.png);
+            background-size: cover;
+        }
+        .nav ul a:nth-child(n+1) li:hover {
+            background-image: url(../img/acoustic_s2.png);
+        }
+        .nav ul a:nth-child(n+2) li {
+            display: block;
+            width: 26.7569%;/*144px*/
+            height: 0;/*29px*/
+            padding-bottom: 5.390457249%;
+            background-image: url(../img/electric.png);
+        }
+        .nav ul a:nth-child(n+2) li:hover {
+            background-image: url(../img/electric_s2.png);
+        }
+        .nav ul a:nth-child(n+3) li {
+            display: block;
+            width: 26.1999%;      /*141px*/
+            height: 0;/*29px*/
+            padding-bottom: 5.390457249%;
+            background-image: url(../img/course.png);
+        }
+        .nav ul a:nth-child(n+3) li:hover {
+            background-image: url(../img/course_s2.png);
+        }
+        .nav ul a:nth-child(n+4) li {
+            display: block;
+            width: 23.041%;/*124px*/
+            height: 0;/*29px*/
+            padding-bottom: 5.390457249%;
+            background-image: url(../img/support.png);
+        }
+        .nav ul a:nth-child(n+4) li:hover {
+            background-image: url(../img/support_s2.png);
+        }
+        /*==================================end of the header=============================*/
+        .ac_bg {
+            width: 100%;
+            height: 0;
+            /*375px;*/
+            padding-bottom: 38.2653061224%;
+            background: url(../img/5.png) ;
+            background-position:center top;
+            background-repeat: no-repeat;
+            background-color: #ff0;
+            background-size: cover;
+            padding-top: 180px;
+            box-sizing: border-box;
+        }
+        .ac_bg span,
+        .ec_bg span {
+            margin-left: 20px;
+        }
+        .ac_text {
+            background-color: #000;
+            color: #fff;
+            font-size: 24px;
+            width: 285px;
+            height: 80px;
+            box-sizing: border-box;
+            margin-left: 57.183673469%;
+            /*580px;*/
+            line-height: 32px;
+            padding: 10px;
+        }
+        .ac_text p span {
+            font-size: 18px;
+        }
+        .ac_text a {
+            color: #fff;
+        }
+        .ac_prt_bg {
+            background: url(../img/4.png) center ;
+            width: 100%;
+            height: 0;
+            /*459px;*/
+            padding-bottom: 46.8367346939%;
+            position: absolute;
+            top: 479px;
+            z-index: 3;
+        }
+        .ac_prt {
+            width: 100%;
+        }
+        .ac_prt_bg img {
+            width: 80.612244898%;
+            /*395px;*/
+            height: 33.0612244898%/*162px*/
+            ;
+            margin-top: 40px;
+            margin-left: 14.4329896907%;
+            /*70px*/
+        }
+        .ac_prt ul {
+            display: inline-block;
+            width: 49%;
+            /*float: left;*/
+            max-width: 485px;
+        }
+        .ac_prt_text {
+            display: inline-block;
+            color: #fff;
+            font-size: 18px;
+            margin-left: 70px;
+            margin-top: 30px;
+            line-height: 24px;
+            vertical-align: top;
+        }
+        .ac_prt_text ~ div {
+            margin-left: 240px;
+        }
+        .ac_prt_text a {
+            color: #fff;
+            font-size: 14px;
+        }
+        .ec_bg {
+            background: url(../img/3.png) top no-repeat;
+            width: 100%;
+            height:0;/* 618px*/
+            padding-bottom: 53.0612244898%;
+            position: absolute;
+            top: 826px;
+            z-index: 1;
+        }
+        .ec_text {
+            background-color: #000;
+            color: #fff;
+            width: 250px;
+            height: 80px;
+            margin-top: 150px;
+            margin-left: 61.224489796%;/*600px*/
+            font-size: 24px;
+            line-height: 32px;
+            padding: 10px;
+        }
+        .ec_text a {
+            color: #fff;
+            font-size: 18px;
+        }
+        .ec_prt {
+            width: 100%;
+            height: 0px;/*574px*/
+            padding-bottom: 58.5714285714%;
+            position: absolute;
+            z-index: 4;
+            top: 1200px;
+            background: url(../img/1.png) center no-repeat;
+        }
+        .ec_prt ul {
+            display: inline-block;
+            width: 49%;
+            max-width: 485px;
+        }
+        .ec_prt img {
+            width: 86.597938144%;
+            height: auto;
+            margin-top: 24.5398773006%;/*120px*/
+            margin-left: 50px;
+            display: inline-block;
+        }
+        .course {
+            background: url(../img/2.png) center no-repeat;
+            width: 100%;
+            height: 0px;/*459px*/
+            padding-bottom: 46.836734694%;
+            top: 1633px;
+            position: absolute;
+            z-index: 1;
+        }
+        .course_text {
+            margin-top: 24.183673469%;/*237px*/
+            margin-left: 3.06122449%;/*30px*/
+            background-color: #000;
+            width: 289px;
+            height: 110px;
+            color: #fff;
+            font-size: 24px;
+            line-height: 32px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .course_text a {
+            color: #fff;
+            font-size: 18px;
+        }
+        .footer {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            max-height: 350px;
+            z-index: 0;
+            top: 2092px;
+            background-color: #000;
+            padding-bottom: 5%;
+            margin-bottom: 50px;
+        }
+        .footer_inside {
+            width: 100%;
+            max-width: 980px;
+            margin: 0 auto;
+
+        }
+        .footer_inside div {
+            color: #fff;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 15px;
+            line-height: 24px;
+
+        }
+        .footer div ul li {
+            display: block;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .detail {
+            width: 178px;
+            height: 192px;
+            margin-left: 30px;
+        }
+        .detail h2{
+            margin-top:0px;
+            margin-bottom: 0;
+        }
+        .map {
+            margin-left: 15.306122449%;
+        }
+        .other {
+            margin-left: 15.306122449%;
+        }
+        .brand {
+            margin-left: 15.306122449%;
+        }
+        .footer_logo {
+            margin-left: 73.4693877551%;
+            box-sizing: border-box;
+            display: block;
+            margin-top: -200px;
+        }
+        .footer_logo img {
+            margin-top: -80px;
+            margin-left: -10px;
+        }
+        

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>Electric Guitar</title>
+	<style>
+		* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:"華康新特明體","新細明體";
+}
+body{
+    background-color:#e5e1d6;
+}
+a {
+    color: #000;
+}
+.loginBar a{
+    color:#fff;
+}
+.footer a{
+    color:#fff;
+}
+div {
+    /*outline: 2px solid #f00;*/
+}
+
+.hamburger {
+            display: none;
+        }
+        .wrapper {
+            width: 90%;
+            max-width: 980px;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            background-color: #aaa;
+            position: relative;
+            padding-bottom: 69px;
+            background-color:#ece9e4;
+        }
+        .header_out {
+            width: 100%;
+            height: 108px;
+            position: absolute;
+        }
+        .header {
+            /*position: relative;*/
+            margin: auto;
+            width: 100%;
+            max-width: 980px;
+            height: 108px;
+        }
+        .loginBar {
+            background:linear-gradient(270deg,#000 30%,#ece9e0 90%);
+            text-align: right;
+            width: 74.081632653%;
+            /*726px;*/
+            height: 20px;
+            float: left;
+            background-color:#000;
+        }
+        .logo {
+            width: 25.9183673469%;
+            /*254px;*/
+            height: 0;
+            /*104px;*/
+            padding-bottom: 11.03%;
+            float: left;
+        }
+        .loginBar p {
+            color: #fff;
+        }
+        
+        .header a img {
+            width: 100%;
+            height: auto;
+        }
+        .nav {
+            width: 57.9795918367%;
+            /*538.118px;*/
+            margin-top: -29px;
+            margin-left: 421px;
+            float: right;
+            padding-right: 3.062%;  /*30px*/
+            /*background-color:#0ff;*/
+        }
+        .nar_ul {
+            /*padding-right: 30px;*/
+        }
+        .nav ul li {
+            /*display:inline-block;*/
+            float: left;
+            background-color: hsla(0, 0%, 0%, 0);
+        }
+        .nav ul a {
+            text-indent: -9999px;
+        }
+        .nav ul a:nth-child(n+1) li {
+            /*打文字在裡面，縮排或是改顏色*/
+            display: block;
+            width: 22.299%;/*120px*/
+            height: 0;/*29px*/
+            padding-bottom: 5.390457249%;
+            background-image: url(img/acoustic.png);
+            background-size: cover;
+        }
+        .nav ul a:nth-child(n+1) li:hover {
+            background-image: url(img/acoustic_s2.png);
+        }
+        .nav ul a:nth-child(n+2) li {
+            display: block;
+            width: 26.7569%;/*144px*/
+            height: 0;/*29px*/
+            padding-bottom: 5.390457249%;
+            background-image: url(img/electric.png);
+        }
+        .nav ul a:nth-child(n+2) li:hover {
+            background-image: url(img/electric_s2.png);
+        }
+        .nav ul a:nth-child(n+3) li {
+            display: block;
+            width: 26.1999%;      /*141px*/
+            height: 0;/*29px*/
+            padding-bottom: 5.390457249%;
+            background-image: url(img/course.png);
+        }
+        .nav ul a:nth-child(n+3) li:hover {
+            background-image: url(img/course_s2.png);
+        }
+        .nav ul a:nth-child(n+4) li {
+            display: block;
+            width: 23.041%;/*124px*/
+            height: 0;/*29px*/
+            padding-bottom: 5.390457249%;
+            background-image: url(img/support.png);
+        }
+        .nav ul a:nth-child(n+4) li:hover {
+            background-image: url(img/support_s2.png);
+        }
+
+        .bread {
+    width: 980px;
+    height: 111px;
+    background: url(img/page_info_bg.png) center;
+}
+
+.webMap {
+    padding-left: 82px;
+    padding-top: 30px;
+}
+
+.pages {
+    text-align: right;
+    padding-right: 30px;
+    margin-top: 50px;
+}
+/*=====================end of the header====================*/
+.footer {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            max-height: 350px;
+            z-index: 0;
+            top: 2500px;
+            background-color: #000;
+            padding-bottom: 5%;
+            margin-bottom: 50px;
+        }
+        .footer_inside {
+            width: 100%;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        .footer_inside div {
+            color: #fff;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 35px;
+            font-size: 15px;
+            line-height: 24px;
+            /*padding-right: 10px;*/
+            /*background-color:#0ff;*/
+        }
+        .footer div ul li {
+            display: block;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .detail {
+            width: 178px;
+            height: 192px;
+            margin-left: 30px;
+        }
+        .detail h2{
+            margin-top:0px;
+            margin-bottom: 0;
+        }
+        .map {
+            margin-left: 15.306122449%;
+        }
+        .other {
+            margin-left: 15.306122449%;
+        }
+        .brand {
+            margin-left: 15.306122449%;
+        }
+        .footer_logo {
+            margin-left: 73.4693877551%;
+            box-sizing: border-box;
+            display: block;
+            margin-top: -200px;
+        }
+        .footer_logo img {
+            margin-top: -80px;
+            margin-left: -10px;
+        }
+/*===================================end of the footer=================*/
+/*==========================start of the prtArea================*/
+.sideBar {
+    background-color: #e5e1d5;
+    width: 150px;
+    height: 558px;
+    /*font-size:20px;*/
+    margin-top: 30px;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+
+.sideBar ul h3 {
+    margin-left: 5px;
+}
+
+.sideBar ul > li {
+    padding-top: 10px;
+}
+
+.sideBar li li {
+    background-color: #673300;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.sideBar ul li ul a li span {
+    display: inline-block;
+}
+
+.prtArea{
+	width: 815px;
+	padding:10px;
+    padding-top: 0px;
+	float: left;
+	box-sizing: border-box;
+	margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+.prt1,.prt2,.prt3,.prt4{
+	width: 810px;
+	padding: 10px;
+	border-radius:;
+	box-sizing: border-box;
+}
+.prt1 img,.prt2 img,.prt3 img,.prt4 img{
+	border-radius:10%;
+	width: 790px;
+	height: auto;
+}
+.prt1 ul,.prt2 ul,.prt3 ul,.prt4 ul{
+	box-sizing: border-box;
+	width: 790px;
+	height: 120px;
+	/*background-color:#0ff;*/
+	margin-top: 10px;
+}
+.prt1 ul li,.prt2 ul li,.prt3 ul li,.prt4 ul li{
+	vertical-align:top;
+	display:inline-block;
+	width: 391px;
+	padding: 15px;
+	box-sizing: border-box;
+	/*background-color:#fa0;*/
+
+}
+
+</style>
+
+</head>
+<body>
+<div class="header_out"></div>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/Logo1.png" height="104" width="260" alt=""></a>
+            </div>
+            <div class="loginBar">
+                <p><a href="javascript: void(0)">註冊</a> <a href="javascript: void(0)">登入</a></p>
+            </div>
+            <div class="nav">
+                <ul>
+                    <a href="acoustic.html"><li>民謠吉他</li></a>
+                    <a href="electric.html"><li>電子吉他</li></a>
+                    <a href="course.html"><li>教學課程</li></a>
+                    <a href="support.html"><li>售後服務</li></a>
+                    
+                </ul>
+            </div><span style="clear:both"></span>
+        </div>
+        <div class="bread">
+            <div class="webMap">
+                <p><a href="index.html">首頁</a>><a href="electric.html">電子吉他<br></a>
+                    <h2>電子吉他</h2></p>
+            </div>
+            <div class="pages">
+                <p><a href="javascript: void(0)">1</a> <a href="javascript: void(0)">2</a> <a href="javascript: void(0)">3</a> ... <a href="javascript: void(0)">Next>></a> <a href="javascript: void(0)">Last>></a></p>
+            </div>
+        </div>
+		
+		<div class="sideBar">
+			<ul>
+				<li>
+					<h3> &nbsp;&nbsp;型號分類</h3>
+					<ul>
+						<li>A08</li>
+						<li>A32</li>
+						<li>T4Z</li>
+						<li>T5Z</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+
+		<div class="prtArea">
+			<div class="prt1">
+				<img src="img/eg1.jpg" alt="">
+				<ul>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla omnis natus facilis quos corporis earum dicta! Debitis voluptate obcaecati, unde, similique laborum illum sint perferendis numquam qui iste, reprehenderit.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel debitis rerum nihil unde, ab asperiores. Non itaque ea a repellat beatae eligendi, cum aperiam molestias unde dolor doloribus ipsa eveniet.</li>
+				</ul>
+			</div>
+
+			<div class="prt2">
+				<img src="img/eg2.jpg" alt="">
+				<ul>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas consequatur consequuntur perspiciatis blanditiis nemo doloremque necessitatibus nostrum quidem ducimus, quasi sapiente iusto repellat error fugiat porro et qui accusamus quam!</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus ex quo totam voluptate aliquid, quod? Vitae obcaecati, delectus quasi omnis asperiores quidem nemo! Totam enim, voluptates, libero numquam labore explicabo.</li>
+				</ul>
+			</div>
+
+			<div class="prt3">
+				<img src="img/eg3.jpg" alt="">
+				<ul>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat cum ipsa nulla odio, saepe sunt aspernatur dolore temporibus earum asperiores, explicabo facilis totam blanditiis voluptate amet provident quibusdam sit nam?</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, exercitationem labore totam eligendi? Itaque exercitationem, veritatis, quo fugit adipisci dolorem harum consequatur eum dolore sequi cum perferendis, pariatur ipsam consectetur?</li>
+				</ul>
+			</div>
+
+			<div class="prt4">
+				<img src="img/eg4.jpg" alt="">
+				<ul>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati ut aperiam odio doloremque doloribus, perferendis, quo iure rerum quasi at reprehenderit repudiandae incidunt unde voluptates modi consequuntur vitae. Explicabo.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis minus voluptatem dolore nisi. Repellat iure repellendus nihil nulla maxime quam aliquam, eaque sequi reiciendis, laudantium excepturi quae doloremque exercitationem voluptatem.</li>
+				</ul>
+			</div>
+
+
+
+		</div>
+        <div class="pages">
+                <p><a href="javascript: void(0)">1</a> <a href="javascript: void(0)">2</a> <a href="javascript: void(0)">3</a> ... <a href="javascript: void(0)">Next>></a> <a href="javascript: void(0)">Last>></a></p>
+            </div>
+</div>
+
+
+
+        <div class="footer">
+        <div class="footer_inside">
+            <div class="detail">
+                
+                    <h2>店家資訊</h2>
+                    <p><br>
+                    <br>地址：
+                    <br>台北市文山區木柵路五段
+                    <br>603號
+                    <br>
+                    <br>電話：03-467589
+                    <br>
+                    <br>營業時間：
+                    <br>星期二到日（一公休）</p>
+            </div>
+            <div class="map">
+                <ul>
+                    <a href="acoustic.html">
+                        <li>民謠吉他</li>
+                    </a>
+                    <a href="electric.html">
+                        <li>電子吉他</li>
+                    </a>
+                    <a href="course.html">
+                        <li>教學課程</li>
+                    </a>
+                    <a href="support.html">
+                        <li>售後服務</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="other">
+                <ul>
+                    <a href="javascript: void(0)">
+                        <li>樂器百科</li>
+                    </a>
+                    <a href="javascript: void(0)">
+                        <li>購物說明</li>
+                    </a>
+                    <a href="javascript: void(0)">
+                        <li>隱私政策</li>
+                    </a>
+                    <a href="javascript: void(0)">
+                        <li>聯絡我們</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="brand">
+                <ul>
+                    <a href="javascript: void(0)">
+                        <li>Fender</li>
+                    </a>
+                    <a href="javascript: void(0)">
+                        <li>Gibson</li>
+                    </a>
+                    <a href="javascript: void(0)">
+                        <li>Ibanez</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer_logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+	</html>	

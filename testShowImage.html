@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+	</title>
+
+	<style>
+		.bg{
+			outline:1px solid #f00;
+			width: 980px;
+			height: 500px;
+			background: center top no-repeat;
+			background-image:url(img/5.png);
+		}
+		</style>
+</head>
+<body>
+<span id="showPanel"></span><br>
+	<div class="bg">
+		
+	</div>
+	
+	<script>   //裝置查詢&隨機換圖
+	var array = new Array("url(img/5.png)","url(img/banner1_small.jpg)","url(img/banner2_small.jpg)","url(img/banner3_small.jpg)","url(img/banner4_small.jpg)","url(img/banner5_small.jpg)","url(img/banner6_small.jpg)","url(img/banner7_small.jpg)","url(img/banner8_small.jpg)");
+	var counter = 0;
+
+	function showImg(){
+		var a;
+			document.getElementById('showPanel').innerHTML=array[counter];
+			a=document.getElementsByClassName("bg");
+			if(counter !== 9){
+				a[0].style.backgroundColor= "red";
+				counter++;
+			}
+			else{
+				counter=1;
+				a.style.backgroundImage= array[0];
+			}
+			
+	}
+	function init(){
+		setInterval(showImg,1000);
+	}
+	window.onload = init;
+</script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+        .state-indicator {
+    position: absolute;
+    top: -999em;
+    left: -999em;
+    z-index: 1;
+    /*螢幕大於1200px*/
+}
+
+/* 小屏幕 */
+@media screen and (max-width: 1200px) {
+    .state-indicator {
+        z-index: 2;
+    }
+}
+
+/* 平板 */
+@media screen and (max-width: 1024px) {
+    .state-indicator {
+        z-index: 3;
+    }
+}
+
+/* 手机 */
+@media screen and (max-width: 480px) {
+    .state-indicator {
+        z-index: 4;
+    }
+}
+/*=========================================end===============================*/
+    body {
+        overflow-x: hidden;
+        background-color: #ece9e0;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: "華康新特明體", "新細明體";
+    }
+    
+    a {
+        color: #fff;
+    }
+    
+        .wrapper {
+            width: 98%;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+        .header {
+            width: 100%;
+            background: linear-gradient(270deg, #ffd5d4 30%, #fff 50%);
+        }
+        .logo {
+            text-align: center;
+        }
+        .loginBar,
+        .nav,
+        .ac_bg,
+        .ec_text,
+        .map,
+        .brand,
+        .other {
+            display: none;
+        }
+        .ac_prt_bg {
+            width: 100%;
+            background-image: url(../img/5.png);
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .ac_prt {
+            display: inline-block;
+        }
+        .ac_prt img {
+            width: 80%;
+            height: auto;
+            margin-left: 10%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .ac_prt_text {
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 18px;
+            line-height: 36px;
+        }
+        .ac_prt_text a {
+            color: #000;
+        }
+        .ec_prt {
+            width: 100%;
+            background: url(../img/3.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .ec_prt img {
+            width: 80%;
+            height: auto;
+            margin-left: 10%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .footer_logo {
+            display: none;
+        }
+        .course {
+            width: 100%;
+        }
+        .course_text {
+            width: 90%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            background-color: #ffd5d4;
+            border-radius: 5%;
+            margin: 5%;
+            text-align: center;
+            color: #673300;
+            font-size: 18px;
+            line-height: 36px;
+        }
+        .course_text a {
+            font-size: 14px;
+            line-height: 20px;
+            color: #673300;
+        }
+        .detail {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 5%;
+            border-radius: 5%;
+            color: #fff;
+            text-align: center;
+            background: url(../img/guitar_esp.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 2%;
+            box-sizing: border-box;
+        }
+        .hamburger {
+            display: block;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+        }
+        .hamburger .hide{
+        	display:none;
+        }
+        .open,
+		.close{
+			display:block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.mobile_menu{
+			width: 200px;
+			height: 30%;
+			border:1px solid #000;
+			background-color:#673300;
+			position: fixed;
+			left: 0;
+			top: 0;
+			transition: .5s;
+		}
+		.mobile_menu.hide{
+			left: -90%;
+		}
+		.mobile_menu a{
+			display:block;
+			text-decoration:none;
+			background-color:#673300;
+			padding: 10px 20px;
+			color:#fff;
+		}
+		.mobile_menu li + li{
+			border-top:1px solid #fff;
+		}
