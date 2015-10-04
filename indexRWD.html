@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to RockLand!!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+    body {
+        overflow-x: hidden;
+        background-color: #ece9e0;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: "華康新特明體", "新細明體";
+    }
+    
+    a {
+        color: #fff;
+    }
+    
+    div {
+        /*outline:2px solid #f00;*/
+    }
+    
+    @media screen and (max-width:480px) {
+        /*手機板*/
+        .wrapper {
+            width: 98%;
+            margin-left: 1%;
+            margin-right: 1%;
+        }
+        .header {
+            width: 100%;
+            background: linear-gradient(270deg, #ffd5d4 30%, #fff 50%);
+        }
+        .logo {
+            text-align: center;
+        }
+        .loginBar,
+        .nav,
+        .ac_bg,
+        .ec_text,
+        .map,
+        .brand,
+        .other {
+            display: none;
+        }
+        .ac_prt_bg {
+            width: 100%;
+            background-image: url(img/5.png);
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .ac_prt {
+            display: inline-block;
+        }
+        .ac_prt img {
+            width: 80%;
+            height: auto;
+            margin-left: 10%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .ac_prt_text {
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            text-shadow: 1px 1px 0 #fff;
+            font-size: 18px;
+            line-height: 36px;
+        }
+        .ac_prt_text a {
+            color: #000;
+        }
+        .ec_prt {
+            width: 100%;
+            background: url(img/3.png);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .ec_prt img {
+            width: 80%;
+            height: auto;
+            margin-left: 10%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        .footer_logo {
+            display: none;
+        }
+        .course {
+            width: 100%;
+        }
+        .course_text {
+            width: 90%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            background-color: #ffd5d4;
+            border-radius: 5%;
+            margin: 5%;
+            text-align: center;
+            color: #673300;
+            font-size: 18px;
+            line-height: 36px;
+        }
+        .course_text a {
+            font-size: 14px;
+            line-height: 20px;
+            color: #673300;
+        }
+        .detail {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 5%;
+            border-radius: 5%;
+            color: #fff;
+            text-align: center;
+            background: url(img/guitar_esp.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 2%;
+            box-sizing: border-box;
+        }
+        .hamburger {
+            display: block;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+        }
+        .hamburger .hide{
+        	display:none;
+        }
+        .open,
+		.close{
+			display:block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.mobile_menu{
+			width: 200px;
+			height: 30%;
+			border:1px solid #000;
+			background-color:#aaa;
+			position: fixed;
+			left: 0;
+			top: 0;
+			transition: .5s;
+		}
+		.mobile_menu.hide{
+			left: -90%;
+		}
+		.mobile_menu a{
+			display:block;
+			text-decoration:none;
+			background-color:#aaa;
+			padding: 10px 20px;
+			color:#fff;
+		}
+		.mobile_menu li + li{
+			border-top:1px solid #fff;
+		}
+    }
+    
+    @media screen and (min-width:481px) {
+        /*桌機版*/
+        .hamburger {
+            display: none;
+        }
+        .wrapper {
+            width: 90%;
+            max-width: 980px;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            background-color: #aaa;
+            position: relative;
+        }
+        .header_out {
+            width: 100%;
+            height: 104px;
+            /*padding-bottom:10.612244898%;*/
+            background: linear-gradient(270deg, #ffd5d4 30%, #fff 50%);
+            background-color: #0f0;
+            position: absolute;
+        }
+        .header {
+            /*position: relative;*/
+            margin: auto;
+            width: 100%;
+            max-width: 980px;
+            height: 104px;
+            /*padding-bottom:10.612244898%;*/
+           
+            /*background-color:#f00;*/
+            background: linear-gradient(270deg, #ffd5d4 30%, #fff 50%);
+            background-color: #0f0;
+        }
+        .loginBar {
+            background-image: url(img/login_bg.png);
+            text-align: right;
+            width: 74.081632653%;
+            /*726px;*/
+            height: 20px;
+            float: left;
+        }
+        .loginBar a:hover{
+        	color:#fff;
+        }
+        .loginBar p {
+            color: #fff;
+        }
+        .logo {
+            width: 25.9183673469%;
+            /*254px;*/
+            height: 0;
+            /*104px;*/
+            padding-bottom: 10.612244898%;
+            float: left;
+        }
+        .header a img {
+            width: 100%;
+            height: auto;
+        }
+        .nav {
+            width: 57.9795918367%;
+            /*538.118px;*/
+            margin-top: -29px;
+            margin-left: 421px;
+            float: right;
+            padding-right: 3.062%;  /*30px*/
+            /*background-color:#0ff;*/
+        }
+        .nar_ul {
+            /*padding-right: 30px;*/
+        }
+        .nav ul li {
+            /*display:inline-block;*/
+            float: left;
+            background-color: hsla(0, 0%, 0%, 0);
+        }
+        .nav ul a {
+            text-indent: -9999px;
+        }
+        .nav ul a:nth-child(n+1) li {
+            /*打文字在裡面，縮排或是改顏色*/
+            display: block;
+            width: 22.299%;/*120px*/
+            height: 0;/*29px*/
+            padding-bottom: 5.390457249%;
+            background-image: url(img/acoustic.png);
+            background-size: cover;
+        }
+        .nav ul a:nth-child(n+1) li:hover {
+            background-image: url(img/acoustic_s2.png);
+        }
+        .nav ul a:nth-child(n+2) li {
+            display: block;
+            width: 26.7569%;/*144px*/
+            height: 0;/*29px*/
+            padding-bottom: 5.390457249%;
+            background-image: url(img/electric.png);
+        }
+        .nav ul a:nth-child(n+2) li:hover {
+            background-image: url(img/electric_s2.png);
+        }
+        .nav ul a:nth-child(n+3) li {
+            display: block;
+            width: 26.1999%;      /*141px*/
+            height: 0;/*29px*/
+            padding-bottom: 5.390457249%;
+            background-image: url(img/course.png);
+        }
+        .nav ul a:nth-child(n+3) li:hover {
+            background-image: url(img/course_s2.png);
+        }
+        .nav ul a:nth-child(n+4) li {
+            display: block;
+            width: 23.041%;/*124px*/
+            height: 0;/*29px*/
+            padding-bottom: 5.390457249%;
+            background-image: url(img/support.png);
+        }
+        .nav ul a:nth-child(n+4) li:hover {
+            background-image: url(img/support_s2.png);
+        }
+        /*==================================end of the header=============================*/
+        .ac_bg {
+            width: 100%;
+            height: 0;
+            /*375px;*/
+            padding-bottom: 38.2653061224%;
+            background: url(img/5.png) center top no-repeat;
+            background-color: #ff0;
+            background-size: cover;
+            padding-top: 180px;
+            box-sizing: border-box;
+        }
+        .ac_bg span,
+        .ec_bg span {
+            margin-left: 20px;
+        }
+        .ac_text {
+            background-color: #000;
+            color: #fff;
+            font-size: 24px;
+            width: 285px;
+            height: 80px;
+            box-sizing: border-box;
+            margin-left: 57.183673469%;
+            /*580px;*/
+            line-height: 32px;
+            padding: 10px;
+        }
+        .ac_text p span {
+            font-size: 18px;
+        }
+        .ac_text a {
+            color: #fff;
+        }
+        .ac_prt_bg {
+            background: url(img/123.png) center no-repeat;
+            width: 100%;
+            height: 0;
+            /*459px;*/
+            padding-bottom: 46.8367346939%;
+            position: absolute;
+            top: 479px;
+            z-index: 3;
+        }
+        .ac_prt {
+            width: 100%;
+        }
+        .ac_prt_bg img {
+            width: 80.612244898%;
+            /*395px;*/
+            height: 33.0612244898%/*162px*/
+            ;
+            margin-top: 40px;
+            margin-left: 14.4329896907%;
+            /*70px*/
+        }
+        .ac_prt ul {
+            display: inline-block;
+            width: 49%;
+            /*float: left;*/
+            max-width: 485px;
+        }
+        .ac_prt_text {
+            display: inline-block;
+            color: #fff;
+            font-size: 18px;
+            margin-left: 70px;
+            margin-top: 30px;
+            line-height: 24px;
+            vertical-align: top;
+        }
+        .ac_prt_text ~ div {
+            margin-left: 240px;
+        }
+        .ac_prt_text a {
+            color: #fff;
+            font-size: 14px;
+        }
+        .ec_bg {
+            background: url(img/3.png) top no-repeat;
+            width: 100%;
+            height:0;/* 618px*/
+            padding-bottom: 53.0612244898%;
+            position: absolute;
+            top: 826px;
+            z-index: 1;
+        }
+        .ec_text {
+            background-color: #000;
+            color: #fff;
+            width: 250px;
+            height: 80px;
+            margin-top: 150px;
+            margin-left: 61.224489796%;/*600px*/
+            font-size: 24px;
+            line-height: 32px;
+            padding: 10px;
+        }
+        .ec_text a {
+            color: #fff;
+            font-size: 18px;
+        }
+        .ec_prt {
+            width: 100%;
+            height: 0px;/*574px*/
+            padding-bottom: 58.5714285714%;
+            position: absolute;
+            z-index: 4;
+            top: 1200px;
+            background: url(img/1.png) center no-repeat;
+        }
+        .ec_prt ul {
+            display: inline-block;
+            width: 49%;
+            max-width: 485px;
+        }
+        .ec_prt img {
+            width: 86.597938144%;
+            height: auto;
+            margin-top: 24.5398773006%;/*120px*/
+            margin-left: 50px;
+            display: inline-block;
+        }
+        .course {
+            background: url(img/2.png) center no-repeat;
+            width: 100%;
+            height: 0px;/*459px*/
+            padding-bottom: 46.836734694%;
+            top: 1633px;
+            position: absolute;
+            z-index: 1;
+        }
+        .course_text {
+            margin-top: 24.183673469%;/*237px*/
+            margin-left: 3.06122449%;/*30px*/
+            background-color: #000;
+            width: 289px;
+            height: 110px;
+            color: #fff;
+            font-size: 24px;
+            line-height: 32px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .course_text a {
+            color: #fff;
+            font-size: 18px;
+        }
+        .footer {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            max-height: 350px;
+            z-index: 0;
+            top: 2092px;
+            background-color: #000;
+            padding-bottom: 5%;
+            margin-bottom: 50px;
+        }
+        .footer_inside {
+            width: 100%;
+            max-width: 980px;
+            margin: 0 auto;
+
+        }
+        .footer_inside div {
+            color: #fff;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 15px;
+            line-height: 24px;
+
+        }
+        .footer div ul li {
+            display: block;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .detail {
+            width: 178px;
+            height: 192px;
+            margin-left: 30px;
+        }
+        .detail h2{
+        	margin-top:0px;
+        	margin-bottom: 0;
+        }
+        .map {
+            margin-left: 15.306122449%;
+        }
+        .other {
+            margin-left: 15.306122449%;
+        }
+        .brand {
+            margin-left: 15.306122449%;
+        }
+        .footer_logo {
+            margin-left: 73.4693877551%;
+            box-sizing: border-box;
+            display: block;
+            margin-top: -200px;
+        }
+        .footer_logo img {
+            margin-top: -80px;
+            margin-left: -10px;
+        }
+        
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header_out"></div>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <a href="indexRWD.html"><img src="img/Logo.png" height="104" width="260" alt=""></a>
+            </div>
+            <div class="loginBar">
+                <p><a href="">註冊</a> <a href="">登入</a></p>
+            </div>
+            <div class="nav">
+                <ul>
+                    <a href="acoustic.html">
+                        <li>民謠吉他</li>
+                    </a>
+                    <a href="electric.html">
+                        <li>電子吉他</li>
+                    </a>
+                    <a href="course.html">
+                        <li>教學課程</li>
+                    </a>
+                    <a href="support.html">
+                        <li>售後服務</li>
+                    </a>
+                </ul>
+            </div><span style="clear:both"></span>
+            <div class="hamburger">
+                <div class="button">
+                    <a href="#" class="open"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+                    <a href="#" class="close hide"><i class="glyphicon glyphicon-remove"></i></a>
+                </div>
+                <div class="mobile_menu hide">
+                    <ul>
+                        <a href="acoustic.html">
+                            <li>民謠吉他</li>
+                        </a>
+                        <a href="electric.html">
+                            <li>電子吉他</li>
+                        </a>
+                        <a href="course.html">
+                            <li>教學課程</li>
+                        </a>
+                        <a href="support.html">
+                            <li>售後服務</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ac_bg">
+            <div class="ac_text">
+                <p>現在就開始你的吉他旅程
+                    <br>選把吉他吧&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="acoustic.html">更多>>></a></span></p>
+            </div>
+        </div>
+        <div class="ac_prt_bg">
+            <div class="ac_prt">
+                <ul>
+                    <li><img src="img/acoustic6.png" alt=""></li>
+                    <li>
+                        <div class="ac_prt_text">
+                            <h2>Taylor 510 民謠吉他</h2>
+                            <p>小指板容易按和絃
+                                <br>配合銀弦不易手痛
+                                <br>每位初學者的必備吉他
+                                <br><a href="acoustic.html">更多內容>></a> </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li><img src="img/acoustic7.png" alt=""></li>
+                    <li>
+                        <div class="ac_prt_text">
+                            <h2>Taylor 650 民謠吉他</h2>
+                            <p>聲音清晰乾淨，較大的共鳴箱
+                                <br>不插電表演的必備吉他
+                                <br> <a href="acoustic.html">更多內容>></a></p>
+                        </div>
+                    </li>
+                </ul><span style="clear:both;"></span>
+            </div>
+        </div>
+        <div class="ec_bg">
+            <div class="ec_text">
+                <p>或是你想選把電吉他
+                    <br>搖滾一下&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="electric.html">更多>></a></span></p>
+            </div>
+        </div>
+        <div class="ec_prt">
+            <ul>
+                <li><img src="img/electric1.png" alt=""></li>
+                <li>
+                    <div class="ac_prt_text">
+                        <h2>Taylor TZ Serious</h2>
+                        <p>楓木製作，三段拾音器，聲音乾淨俐落
+                            <br><a href="electric.html">更多>></a></p>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li><img src="img/electric2.png" alt=""></li>
+                <li>
+                    <div class="ac_prt_text">
+                        <h2>Taylor TZ Serious</h2>
+                        <p>楓木製作，三段拾音器，聲音乾淨俐落
+                            <br><a href="electric.html">更多>></a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="course">
+            <div class="course_text">
+                <p>從基礎到進階的各種課程
+                    <br>帶你循序漸進
+                    <br><a href="course.html">馬上報名>></a></p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_inside">
+            <div class="detail">
+                 <h2>店家資訊</h2>
+                    <p><br>
+                    <br>地址：
+                    <br>台北市文山區木柵路五段
+                    <br>603號
+                    <br>
+                    <br>電話：03-467589
+                    <br>
+                    <br>營業時間：
+                    <br>星期二到日（一公休）</p>
+            </div>
+            <div class="map">
+                <ul>
+                    <a href="acoustic.html">
+                        <li>民謠吉他</li>
+                    </a>
+                    <a href="electric.html">
+                        <li>電子吉他</li>
+                    </a>
+                    <a href="course.html">
+                        <li>教學課程</li>
+                    </a>
+                    <a href="support.html">
+                        <li>售後服務</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="other">
+                <ul>
+                    <a href="">
+                        <li>樂器百科</li>
+                    </a>
+                    <a href="">
+                        <li>購物說明</li>
+                    </a>
+                    <a href="">
+                        <li>隱私政策</li>
+                    </a>
+                    <a href="">
+                        <li>聯絡我們</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="brand">
+                <ul>
+                    <a href="">
+                        <li>Fender</li>
+                    </a>
+                    <a href="">
+                        <li>Gibson</li>
+                    </a>
+                    <a href="">
+                        <li>Ibanez</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer_logo">
+                <a href="indexRWD.html"><img src="img/logo.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	$(document).ready( function(){
+	//丁館賣叮噹
+
+		$('.open').click(function(){
+			$('.open').addClass('hide');
+			$('.close').removeClass('hide');
+			$('.mobile_menu').removeClass('hide');
+		})
+
+		$('.close').click(function(){
+			$('.open').removeClass('hide');
+			$('.close').addClass('hide');
+			$('.mobile_menu').addClass('hide');
+		})
+
+
+
+	//A咖賣叮噹
+	})
+
+</script>
+</body>
+
+</html>

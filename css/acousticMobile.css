@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:"華康新特明體","新細明體";
+}
+body{
+    overflow-x: hidden;
+    background-color:#e5e1d5;
+}
+a {
+    color: #000;
+}
+
+.loginBar,.nav,.bread,.sideBar,.map,.other,.brand,.footer_logo{
+	display: none;
+}
+.header {
+            width: 100%;
+            background: url(../img/background.png);
+        }
+.logo{
+	text-align: center;
+}
+/*==========hamburger===========*/
+.hamburger {
+            display: block;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+        }
+        .hamburger .hide{
+        	display:none;
+        }
+        .button{
+        	width: 40px;
+        	height: 40px;
+        }
+        .button a{
+        	float: left;
+        }
+        .mobile_open,
+		.mobile_close{
+			display:block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		.mobile_menu{
+			width: 170px;
+			height: 32%;
+			border:1px solid #000;
+			background-color:#673300;
+			position: fixed;
+			z-index: 10;
+			left: 0;
+			top: 0;
+			transition: .5s;
+		}
+		.mobile_menu.hide{
+			left: -90%;
+		}
+		.mobile_menu a{
+			display:block;
+			text-decoration:none;
+			background-color:#673300;
+			padding: 10px 20px;
+			color:#fff;
+		}
+		.mobile_menu li + li{
+			border-top:1px solid #fff;
+		}
+/*========end of the hamburger==========*/
+
+/*====================setting of the single product====================*/
+
+#btn
+{
+    display: none;
+}
+
+.hide{
+    display:none;
+}
+.singlePrt{
+    width: 100%;
+	height: 800px;
+    float: left;
+    padding-bottom: -100px;
+    margin-top: 0px;
+    position: relative;
+}
+.singlePrt img{
+    display:block;
+    margin:25px auto 0 auto;
+    width: 95%;
+	height: auto;
+}
+.close{
+    font-size:50px;
+    text-align:left;
+    color:#000;
+    position: absolute;
+    right:25px;
+    top: 0;
+	width: 7.14285714286%;
+	padding-bottom: 7.14285714286%;
+}
+.close a{
+    color:#000;
+}
+.singlePrtText{
+    width: 94%;
+    height: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+    text-align: center;
+ 	border:1px solid #aaa;
+ 	border-radius: 5% 5% 5% 5%/8% 8% 8% 8%;
+}
+.singlePrtText h2{
+    line-height:35px;
+}
+.singlePrtText p{
+    font-size:20px;
+    line-height:26px;
+}
+.submit{
+	
+    width: 108px;
+    height: 29px;
+    background-color:#673300;
+    text-align:center;
+    line-height:25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-kit-box-sizing: border-box;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+.submit a{
+    color:#fff;
+}
+
+#pages{
+	text-align: right;
+	margin:10px 5px;
+}
+.detail {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 0px;
+            border-radius: 5%;
+            height: 200px;
+            color: #fff;
+            text-align: center;
+            background: url(../img/guitar_esp.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 2%;
+            box-sizing: border-box;
+            text-shadow: 1px 1px 0 #000;
+        }
+
+/*===========================end of the setting of the singleproduct=============*/
+
+/*=======product_area=========*/
+.prtArea {
+	width: 98%;
+	padding-bottom: 
+}
+.prtArea > ul{
+	width: 100%;
+	/*background-color: #f00;*/
+	padding: 15px 0px;
+}
+.prtArea ul li{
+	/*background-color: #ff0;*/
+}
+.prtArea ul li ul li{
+	display: inline-block;
+	margin-left: 20px;
+}
+.prtArea ul li ul li:nth-child(3){
+	margin-left: 133px;
+	margin-top: -45px;
+}
+
+/*===============product position ajust==============*/
+	
+.prtArea ul li:nth-child(2n+2) {
+	margin-top: -30px;
+}
+
+.prtArea ul li:nth-child(2){
+	margin-bottom: 10px;
+}
+/*===============product position ajust==============*/
+
+
+
+
+
+

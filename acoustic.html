@@ -2,361 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
 	<title>Acoustic Guitars</title>
 
-    
+    <link rel="stylesheet" media="(max-width:480px)" href="css/acousticMobile.css">
+    <link rel="stylesheet" media="(min-width:481px)" href="css/acousticLarge.css">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family:"華康新特明體","新細明體";
-}
-body{
-    overflow-x: hidden;
-    background-color:#e5e1d5;
-}
 
-
-
-div {
-    /*outline: 2px solid #f00;*/
-}
-a {
-    color: #000;
-}
-.loginBar a{
-    color:#fff;
-}
-.footer a{
-    color:#fff;
-}
-.hamburger {
-            display: none;
-        }
-        .wrapper {
-            width: 90%;
-            max-width: 980px;
-            height:1280px;
-            margin-left: auto;
-            margin-right: auto;
-            left: 0;
-            right: 0;
-            background-color: #aaa;
-            position: relative;
-            padding-bottom: 50px;
-            background-color:#ece9e4;
-           /* outline:1px solid #f00;*/
-        }
-        .header_out {
-            width: 100%;
-            height: 108px;
-            position: absolute;
-        }
-        .header {
-            /*position: relative;*/
-            margin: auto;
-            width: 100%;
-            max-width: 980px;
-            height: 108px;
-        }
-        .loginBar {
-            background:linear-gradient(270deg,#000 30%,#ece9e0 90%);
-            text-align: right;
-            width: 74.081632653%;
-            /*726px;*/
-            height: 20px;
-            float: left;
-            background-color:#000;
-        }
-        .logo {
-            width: 25.9183673469%;
-            /*254px;*/
-            height: 0;
-            /*104px;*/
-            padding-bottom: 11.03%;
-            float: left;
-        }
-        .loginBar p {
-            color: #fff;
-        }
-        
-        .header a img {
-            width: 100%;
-            height: auto;
-        }
-        .nav {
-            width: 57.9795918367%;
-            /*538.118px;*/
-            margin-top: -29px;
-            margin-left: 421px;
-            float: right;
-            padding-right: 3.062%;  /*30px*/
-            /*background-color:#0ff;*/
-        }
-        .nar_ul {
-            /*padding-right: 30px;*/
-        }
-        .nav ul li {
-            /*display:inline-block;*/
-            float: left;
-            background-color: hsla(0, 0%, 0%, 0);
-        }
-        .nav ul a {
-            text-indent: -9999px;
-        }
-        .nav ul a:nth-child(n+1) li {
-            /*打文字在裡面，縮排或是改顏色*/
-            display: block;
-            width: 22.299%;/*120px*/
-            height: 0;/*29px*/
-            padding-bottom: 5.390457249%;
-            background-image: url(img/acoustic.png);
-            background-size: cover;
-        }
-        .nav ul a:nth-child(n+1) li:hover {
-            background-image: url(img/acoustic_s2.png);
-        }
-        .nav ul a:nth-child(n+2) li {
-            display: block;
-            width: 26.7569%;/*144px*/
-            height: 0;/*29px*/
-            padding-bottom: 5.390457249%;
-            background-image: url(img/electric.png);
-        }
-        .nav ul a:nth-child(n+2) li:hover {
-            background-image: url(img/electric_s2.png);
-        }
-        .nav ul a:nth-child(n+3) li {
-            display: block;
-            width: 26.1999%;      /*141px*/
-            height: 0;/*29px*/
-            padding-bottom: 5.390457249%;
-            background-image: url(img/course.png);
-        }
-        .nav ul a:nth-child(n+3) li:hover {
-            background-image: url(img/course_s2.png);
-        }
-        .nav ul a:nth-child(n+4) li {
-            display: block;
-            width: 23.041%;/*124px*/
-            height: 0;/*29px*/
-            padding-bottom: 5.390457249%;
-            background-image: url(img/support.png);
-        }
-        .nav ul a:nth-child(n+4) li:hover {
-            background-image: url(img/support_s2.png);
-        }
-
-        .bread {
-    width: 980px;
-    height: 111px;
-    background: url(img/page_info_bg.png) center;
-}
-
-.webMap {
-    padding-left: 82px;
-    padding-top: 30px;
-}
-
-.pages {
-    text-align: right;
-    padding-right: 30px;
-    margin-top: 50px;
-}
-#pages{
-     text-align: right;
-    padding-right: 30px;
-    margin-top: 50px;
-}
-/*===================================end of the footer=================*/
-/*==========================start of the prtArea================*/
-.sideBar {
-    background-color: #e5e1d5;
-    width: 150px;
-    height: 558px;
-    /*font-size:20px;*/
-    margin-top: 30px;
-    float: left;
-    box-sizing: border-box;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 5px;
-}
-
-.sideBar ul h3 {
-    margin-left: 5px;
-}
-
-.sideBar ul > li {
-    padding-top: 10px;
-}
-
-.sideBar li li {
-    background-color: #673300;
-    color: #fff;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
-}
-
-.sideBar ul li ul a li span {
-    display: inline-block;
-}
-
-.prtArea {
-    width: 825px;
-    height: 1010px;
-    float: left;
-}
-
-.prtArea ul li ul li {
-    float: left;
-
-}
-.prtArea ul li ul li img{
-	/*opacity:.5;*/
-}
-
-.prtArea ul {
-    margin-top: 50px;
-}
-
-.prtArea ul li:nth-child(2n+1) ul li,
-.prtArea ul li:nth-child(2n+2) ul li ~ li {
-    margin-left: 60px;
-}
-
-.prtArea ul li:nth-child(2n+2) ul li{
-    margin-left: 189px;
-}
-.prtArea ul li ul li:hover img{
-	opacity:0.5;
-}
-
-.footer {
-            position: absolute;
-            width: 100%;
-            height: auto;
-            max-height: 350px;
-            z-index: 0;
-            top: 1280px;
-            background-color: #000;
-            padding-bottom: 5%;
-            margin-bottom: 50px;
-        }
-        .footer_inside {
-            width: 100%;
-            max-width: 980px;
-            margin: 0 auto;
-        }
-        .footer_inside div {
-            color: #fff;
-            display: inline-block;
-            vertical-align: top;
-            margin-top: 35px;
-            font-size: 15px;
-            line-height: 24px;
-            /*padding-right: 10px;*/
-            /*background-color:#0ff;*/
-        }
-        .footer div ul li {
-            display: block;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        .detail {
-            width: 178px;
-            height: 192px;
-            margin-left: 30px;
-        }
-        .detail h2{
-            margin-top:0px;
-            margin-bottom: 0;
-        }
-        .map {
-            margin-left: 15.306122449%;
-        }
-        .other {
-            margin-left: 15.306122449%;
-        }
-        .brand {
-            margin-left: 15.306122449%;
-        }
-        .footer_logo {
-            margin-left: 73.4693877551%;
-            box-sizing: border-box;
-            display: block;
-            margin-top: -200px;
-        }
-        .footer_logo img {
-            margin-top: -80px;
-            margin-left: -10px;
-        }
-#btn
-{
-    display: none;
-}
-
-.hide{
-    display:none;
-}
-.singlePrt{
-    width: 825px;
-    float: left;
-    padding-bottom: -100px;
-    margin-top: 70px;
-    position: relative;
-}
-.singlePrt img{
-    display:block;
-    margin:25px auto 0 auto;
-}
-.close{
-    font-size:50px;
-    text-align:left;
-    color:#000;
-    position: absolute;
-    right:25px;
-    top: 0;
-}
-.close a{
-    color:#000;
-}
-.singlePrtText{
-    width: 615px;
-    height: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:-20px;
-}
-.singlePrtText h2{
-    line-height:35px;
-}
-.singlePrtText p{
-    font-size:20px;
-    line-height:26px;
-}
-.submit{
-    width: 108px;
-    height: 29px;
-    background-color:#673300;
-    text-align:center;
-    line-height:25px;
-    box-sizing: border-box;
-    padding: 2px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.submit a{
-    color:#fff;
-}
-.submit:hover{
-    background-color:#f00;
-}
 </style>
 
 </head>
@@ -378,6 +31,28 @@ a {
                     
                 </ul>
             </div><span style="clear:both"></span>
+            <div class="hamburger">
+                <div class="button">
+                    <a href="javascript: void(0)" class="mobile_open"><img src="img/menu.png" alt="" width="30px" height="30px"></a>
+                    <a href="javascript: void(0)" class="mobile_close hide"><img src="img/close.png" height="30px" width="30px" alt=""></a>
+                </div>
+                <div class="mobile_menu hide">
+                    <ul>
+                        <a href="acoustic.html">
+                            <li>民謠吉他</li>
+                        </a>
+                        <a href="electric.html">
+                            <li>電子吉他</li>
+                        </a>
+                        <a href="course.html">
+                            <li>教學課程</li>
+                        </a>
+                        <a href="support.html">
+                            <li>售後服務</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
 			
 		</div>
 		<div class="bread">
@@ -394,19 +69,19 @@ a {
 	<div class="sideBar">
             <ul>
                 <li>
-                    <h3> &nbsp;&nbsp;分類排列</h3>
+                    <h3>分類排列</h3>
                     <ul>
-                        <li>形狀</li>
-                        <li>木頭</li>
-                        <li>價錢</li>
-                        <li>廠牌</li>
+                        <a href="javascript: void(0)"><li>形狀</li></a>
+                        <a href="javascript: void(0)"><li>木頭</li></a>
+                        <a href="javascript: void(0)"><li>價錢</li></a>
+                        <a href="javascript: void(0)"><li>廠牌</li></a>
                     </ul>
                 </li>
             </ul>
         </div>
         <div class="singlePrt hide">
             <div class="close">
-            <a href="javascript: void(0)"><img src="img/close.png" height="70" width="70" alt=""></i></a>
+            <a href="javascript: void(0)"><img src="img/close.png" height="70" width="70" alt=""></a>
             </div>
             <img src="img/singleLargePrt.png" height="715" width="615" alt="">
             <div class="singlePrtText">
@@ -418,7 +93,7 @@ a {
                     <a href="javascript: void(0)"><p>加入購物車</p></a>
                 </div>
             </div>
-        </div>
+        </div><span style="clear:both;"></span>
 		<div class="prtArea">
 				<ul>
 					<li>
@@ -521,22 +196,47 @@ a {
     </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
+<script>//this is mobile menr
     $(document).ready( function(){
     //丁館賣叮噹
 
+        $('.mobile_open').click(function(){
+            $('.mobile_open').addClass('hide');
+            $('.mobile_close').removeClass('hide');
+            $('.mobile_menu').removeClass('hide');
+        })
 
+        $('.mobile_close').click(function(){
+            $('.mobile_open').removeClass('hide');
+            $('.mobile_close').addClass('hide');
+            $('.mobile_menu').addClass('hide');
+        })
+
+
+    //A咖賣叮噹
+    })
+
+</script>
+
+
+<script>  //this is to switch the product area
+    $(document).ready( function(){
+    //丁館賣叮噹
+
+        
         $('#btn').click(function(){
             $('.prtArea').addClass('hide');
             $('.singlePrt').removeClass('hide');
             $('#pages').addClass('hide');
+            $('.detail').css('margin-top',830);      
         })
 
         $('.close').click(function(){
             $('.prtArea').removeClass('hide');
             $('.singlePrt').addClass('hide');
             $('#pages').removeClass('hide');
-
+            $('.detail').css('margin-top',0);
+            
         })
 
 

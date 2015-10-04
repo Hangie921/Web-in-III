@@ -43,6 +43,9 @@
     a {
         color: #fff;
     }
+    a:hover{
+        color:#f00;
+    }
     
         
         .hamburger {
@@ -78,6 +81,9 @@
             height: 20px;
             float: left;
             background-color:#000;
+        }
+        .loginBar p a:hover{
+            color:#f00;
         }
         .logo {
             width: 25.9183673469%;
@@ -196,6 +202,9 @@
         .ac_text a {
             color: #fff;
         }
+        .ac_text a:hover{
+            color: #f00;
+        }
         .ac_prt_bg {
             background: url(../img/4.png) center ;
             width: 100%;
@@ -212,8 +221,7 @@
         .ac_prt_bg img {
             width: 80.612244898%;
             /*395px;*/
-            height: 33.0612244898%/*162px*/
-            ;
+            height: 33.0612244898%;
             margin-top: 40px;
             margin-left: 14.4329896907%;
             /*70px*/
@@ -240,6 +248,9 @@
             color: #fff;
             font-size: 14px;
         }
+        .ac_prt_text a:hover{
+            color:#0af;
+        }
         .ec_bg {
             background: url(../img/3.png) top no-repeat;
             width: 100%;
@@ -252,8 +263,8 @@
         .ec_text {
             background-color: #000;
             color: #fff;
-            width: 250px;
-            height: 80px;
+            width: 216px;
+            height: 69px;
             margin-top: 150px;
             margin-left: 61.224489796%;/*600px*/
             font-size: 24px;
@@ -263,6 +274,10 @@
         .ec_text a {
             color: #fff;
             font-size: 18px;
+        }
+        .ec_text p a:hover{
+            color:#f00;
+
         }
         .ec_prt {
             width: 100%;
@@ -284,6 +299,9 @@
             margin-top: 24.5398773006%;/*120px*/
             margin-left: 50px;
             display: inline-block;
+        }
+        .ec_prt_text a:hover{
+            color:#0af;
         }
         .course {
             background: url(../img/2.png) center no-repeat;
@@ -309,6 +327,9 @@
         .course_text a {
             color: #fff;
             font-size: 18px;
+        }
+        .course_text p a:hover{
+            color:#f00;
         }
         .footer {
             position: absolute;
